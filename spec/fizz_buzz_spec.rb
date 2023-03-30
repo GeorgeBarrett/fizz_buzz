@@ -17,3 +17,15 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(15)).to eq 'fizzbuzz'
   end
 end
+
+describe 'fizz_buzz' do
+  it 'returns "please input a positive integer" when passed a number smaller than 1' do
+    expect(fizz_buzz(0)).to eq 'please input a positive integer'
+  end
+end
+
+describe 'fizz_buzz' do
+  it 'returns "please input a positive integer" when passed a symbol' do
+    expect(fizz_buzz("$")).to eq 'please input a positive integer'
+  end
+end
